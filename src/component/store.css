@@ -1,0 +1,34 @@
+.containerproducts {
+    width: min(1200px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px auto;
+}
+
+.containerproducts .productcard {
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    transition: all ease-in-out 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+.containerproducts .productcard:hover {
+    background: white;
+    color: black;
+}
+
+.containerproducts .productcard img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.filterstyle {
+    padding: 10px 15px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+}

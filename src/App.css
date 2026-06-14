@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --bg: black;
+}
+
+body {
+  background-color: var(--bg);
+  color: white;
+}

@@ -1,0 +1,49 @@
+.productcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.maincontainer {
+
+    margin: 30px auto;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 45%;
+    padding: 20px 10px;
+    line-height: 30px;
+}
+
+.left img {
+    width: 100%;
+}
+
+h1,
+p {
+    padding: 10px 0px;
+}
+
+.backnavigation {
+    background: white;
+    color: black;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+.minidetails {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detailbox {
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+}

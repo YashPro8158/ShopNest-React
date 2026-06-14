@@ -1,0 +1,12 @@
+.containerhome {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 87vh;
+   
+}
+.top{
+    text-align: center;
+    padding: 20px 10px;
+}

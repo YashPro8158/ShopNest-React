@@ -1,0 +1,67 @@
+.logo {
+    font-size: 1.5em;
+}
+
+
+.navbarcontainer {
+    background-color: chocolate;
+    padding: 20px 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+
+.Link {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    color: white;
+    padding: 10px 12px;
+}
+
+.Link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 100%;
+    left: 0%;
+    background: white;
+    transition: all ease-in-out 0.3s;
+}
+
+.Link:hover::after {
+    width: 100%;
+}
+
+.menucartbox {
+    position: relative;
+}
+
+.menucartbox i {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.countcart {
+    position: absolute;
+    top: -32%;
+    right: -50%;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

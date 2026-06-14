@@ -1,0 +1,10 @@
+.containerabout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+.aboutcontent p {
+    line-height: 35px;
+}
