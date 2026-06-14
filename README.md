@@ -1,23 +1,44 @@
-<<<<<<< HEAD
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ShopNest
+>>>>>>> fb8fed23ea3239e0c6c33dc8372b95ad05885367
 
-Currently, two official plugins are available:
+ShopNest is a modern e-commerce web application built using React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Product Listing
+- Product Details Page
+- Search Products
+- Category Filtering
+- Price Sorting
+- Dynamic Routing
+- Loading State
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Technologies Used
 
-Note: This will impact Vite dev & build performances.
+- React
+- React Router DOM
+- CSS3
+- DummyJSON API
 
-## Expanding the ESLint configuration
+## Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# ShopNest-React
-git commit -m "Initial commit - ShopNest e-commerce application"
->>>>>>> fdfe94b9df5ffef5aa0058065bf566f1f31ec204
+  <img width="1316" height="640" alt="Screenshot (214)" src="https://github.com/user-attachments/assets/4c13303a-bc7d-467f-a845-5cd21acc2340" />
+  <img width="1228" height="596" alt="Screenshot (215)" src="https://github.com/user-attachments/assets/8f9d3c3b-76af-49f5-ba83-926e039aa5b8" />
+  <img width="1286" height="636" alt="Screenshot (216)" src="https://github.com/user-attachments/assets/667dda68-3f15-4234-8e26-d41fd790e09f" />
+  <img width="1306" height="632" alt="Screenshot (217)" src="https://github.com/user-attachments/assets/1703e896-011c-4a39-9f80-d2db33befddd" />
+
+
+
+
+
+
+
+
+
+
+## Live Demo
+
+https://shopnestreact.vercel.app
+
+
