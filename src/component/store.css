@@ -1,7 +1,7 @@
 .containerproducts {
     width: min(1200px, 92%);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin: 30px auto;
 }
@@ -13,6 +13,8 @@
     transition: all ease-in-out 0.3s;
     text-decoration: none;
     color: white;
+    border-radius: 10px;
+
 }
 
 .containerproducts .productcard:hover {
@@ -20,9 +22,22 @@
     color: black;
 }
 
+.containerproducts .productcard:hover button{
+    background: black;
+    color: white;
+}
+
 .containerproducts .productcard img {
-    width: 100%;
-    object-fit: cover;
+    width: 60%;
+    margin: 10px 0px;
+}
+
+.productcard:hover {
+    transform: translateY(-15px);
+}
+
+.productcard p {
+    padding: 2px 0px;
 }
 
 .filterstyle {
@@ -31,4 +46,5 @@
     margin: 10px;
     cursor: pointer;
     outline: none;
+    transition: all ease-in-out 0.3s;
 }

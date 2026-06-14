@@ -47,7 +47,7 @@ export default function Productdetails({ cartproducts, Setcartproducts }) {
                             <p className="detailbox">Discount: {mainproduct.discountPercentage}%  </p>
                         </div>
                         <p>Description: {mainproduct.description}</p>
-                        <p>Price: ₹ {mainproduct.price}</p>
+                        <p>Price: ₹{Math.floor(mainproduct.price)}</p>
                         <button className="filterstyle" onClick={() => {
                             Setcartproducts(prev => [...prev, mainproduct]);
                             console.log(cartproducts);

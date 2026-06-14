@@ -48,6 +48,7 @@ p {
     border-radius: 40px;
 }
 
+
 @media screen and (max-width:768px) {
     .productcontainer {
         flex-direction: column;

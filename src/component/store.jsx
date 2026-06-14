@@ -18,7 +18,7 @@ export default function Store() {
     ) && (categoryproducts === ""
         ||
         data.category === categoryproducts))
-    const category = ["beauty","fragrances",
+    const category = ["beauty", "fragrances",
         "furniture",
         "groceries",
         "home-decoration",
@@ -74,7 +74,7 @@ export default function Store() {
                 <select name="categoryfilter" className="filterstyle" value={categoryproducts} onChange={(e) => SetCategory(e.target.value)}>
                     <option value="">All category</option>
                     {category.map(data => <option value={data}>{data}</option>)}
-                </select>                
+                </select>
             </div>
             {filteredproducts.length !== 0 ? <h3>Showing {filteredproducts.length} products</h3> : null}
             <div className="containerproducts">
@@ -82,19 +82,22 @@ export default function Store() {
                     load ? <h2>Loading...</h2> : filteredproducts.length !== 0 ? filteredproducts.map(data =>
                         <div key={data.id} className="productcard" >
                             <h2>{data.title}</h2>
-                            <Link to={`/store/${data.id}`} >
-                                <img src={data.thumbnail} alt={data.title} />
-                            </Link>
+                            <img src={data.thumbnail} alt={data.title} />
                             <p>Rating: {data.rating}</p>
                             <p>Brand: {data.brand}</p>
 
-                            {data.stock <= 0 ? <p>Out of Stock</p> :
-                                <p>Available</p>}
+                            {data.stock <= 0 ? <p>Stock: Out of Stock</p> :
+                                <p>Stock: Available</p>}
                             <p>discount: {data.discountPercentage}%</p>
-                            <p>₹ {data.price}</p>
+                            <p>Price: ₹{Math.floor(data.price)}</p>
+                            <Link to={`/store/${data.id}`} >
+                                <button className="filterstyle">View product</button></Link>
                         </div>
                     ) : <h2>No products Found</h2>
                 }
             </div>
-        </>    )
+
+
+
+        </>)
 }
