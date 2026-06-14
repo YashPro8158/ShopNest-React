@@ -1,7 +1,7 @@
 import React from "react";
 import './topnavbar.css'
 import { Link, Outlet } from 'react-router-dom';
-export default function Topnavbar() {
+export default function Topnavbar({ cartproducts }) {
     return (
 
         <>
@@ -13,9 +13,10 @@ export default function Topnavbar() {
                     <Link to="/store" className='Link'>Store</Link>
                     <Outlet />
                 </nav>
-                <div className="menucartbox">
-                    <i class="fi fi-rr-shopping-cart-add"></i>
-                </div>
+                    <div className="menucartbox">
+                        <i className="fi fi-rr-shopping-cart-add"></i>
+                        <div className="countcart">{cartproducts.length}</div>
+                    </div>
             </div>
 
         </>

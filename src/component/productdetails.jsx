@@ -4,7 +4,7 @@ import { Link, Outlet } from 'react-router-dom';
 import './productdetails.css'
 
 
-export default function Productdetails() {
+export default function Productdetails({ cartproducts, Setcartproducts }) {
 
     const { id } = useParams();
     const [mainproduct, Setmainproduct] = useState(null)
@@ -48,7 +48,10 @@ export default function Productdetails() {
                         </div>
                         <p>Description: {mainproduct.description}</p>
                         <p>Price: ₹ {mainproduct.price}</p>
-                        <button className="filterstyle">Add to Cart</button>
+                        <button className="filterstyle" onClick={() => {
+                            Setcartproducts(prev => [...prev, mainproduct]);
+                            console.log(cartproducts);
+                        }}>Add to Cart</button>
                         <button className="filterstyle">Add Wishlist</button>
                     </div>
                 </div>

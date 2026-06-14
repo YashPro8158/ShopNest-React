@@ -9,21 +9,22 @@ import Store from './component/store'
 import Productdetails from './component/productdetails'
 
 function App() {
-
+  const [cartproducts, Setcartproducts] = useState([]);
 
   return (
     <>
 
       <BrowserRouter>
-        <Topnavbar />
+        <Topnavbar cartproducts={cartproducts} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/store" element={<Store />} />
           <Route
             path="/store/:id"
-            element={<Productdetails />}
+            element={<Productdetails cartproducts={cartproducts} Setcartproducts={Setcartproducts} />}
           />
+
         </Routes>
       </BrowserRouter>
     </>
