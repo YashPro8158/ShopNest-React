@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import './store.css'
 import { Link, Outlet } from 'react-router-dom';
-
 async function fetchproducts() {
     const res = await fetch("https://dummyjson.com/products?limit=194");
     const data = await res.json();
     return data.products;
 }
-
 export default function Store() {
     const [products, Setproducts] = useState([]);
     const [originalproducts, Setorginal] = useState([]);
@@ -20,9 +18,7 @@ export default function Store() {
     ) && (categoryproducts === ""
         ||
         data.category === categoryproducts))
-    const category = [
-        "beauty",
-        "fragrances",
+    const category = ["beauty","fragrances",
         "furniture",
         "groceries",
         "home-decoration",
@@ -46,7 +42,6 @@ export default function Store() {
         "womens-shoes",
         "womens-watches"
     ]
-
     useEffect(() => {
         async function loadproducts() {
             const allproduts = await fetchproducts();
@@ -56,7 +51,6 @@ export default function Store() {
         }
         loadproducts();
     }, [])
-
     return (
         <>
             <div className="top">
@@ -80,8 +74,7 @@ export default function Store() {
                 <select name="categoryfilter" className="filterstyle" value={categoryproducts} onChange={(e) => SetCategory(e.target.value)}>
                     <option value="">All category</option>
                     {category.map(data => <option value={data}>{data}</option>)}
-                </select>
-                
+                </select>                
             </div>
             {filteredproducts.length !== 0 ? <h3>Showing {filteredproducts.length} products</h3> : null}
             <div className="containerproducts">
@@ -103,7 +96,5 @@ export default function Store() {
                     ) : <h2>No products Found</h2>
                 }
             </div>
-
-        </>
-    )
+        </>    )
 }

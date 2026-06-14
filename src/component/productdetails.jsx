@@ -45,10 +45,11 @@ export default function Productdetails() {
                             <p className="detailbox">Brand: {mainproduct.brand}  </p>
                             {mainproduct.stock == 0 ? <p className="detailbox">Stock: Out of  Stock</p> : <p className="detailbox">Stock:  Available</p>}
                             <p className="detailbox">Discount: {mainproduct.discountPercentage}%  </p>
-
                         </div>
                         <p>Description: {mainproduct.description}</p>
                         <p>Price: ₹ {mainproduct.price}</p>
+                        <button className="filterstyle">Add to Cart</button>
+                        <button className="filterstyle">Add Wishlist</button>
                     </div>
                 </div>
             </div>
