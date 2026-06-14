@@ -47,3 +47,21 @@ p {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 40px;
 }
+
+@media screen and (max-width:768px) {
+    .productcontainer {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:640px) and (min-width:360px) {
+    .detailbox {
+        font-size: 9px;
+    }
+}
