@@ -10,3 +10,14 @@
     text-align: center;
     padding: 20px 10px;
 }
+
+@media screen and (max-width:768px) {
+    .containerhome {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+}
